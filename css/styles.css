@@ -219,8 +219,20 @@ nav a.active {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
+  color: rgb(184,115,51);
+  text-decoration: none;
 }
 
+.section-link {
+  font-size: 32px;
+  font-weight: 600;
+  color: rgb(120, 62, 47); /* Copper accent */
+  text-decoration: none;
+}
+
+.section-link:hover {
+  text-decoration: underline;
+}
 
 .styles-container {
   max-width: 1000px;
@@ -376,5 +388,6 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
 
 

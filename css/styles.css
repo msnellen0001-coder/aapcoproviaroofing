@@ -1,0 +1,252 @@
+
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: rgb(255,255,255); /* White */
+  color: rgb(0, 0, 0); /* Black for text */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header & Navigation */
+
+
+header {
+  background-color: white;
+  color: rgb(120, 162, 47);
+  padding: 8px 0;
+  text-align: center;
+  width: 100%;
+  position: sticky;       /* Keeps it at the top while scrolling */
+  top: 0;
+  z-index: 1000;
+}
+
+header img {
+  max-height: 50px;    /* 50px */
+  margin: 10px;        /* 10px */
+  vertical-align: middle;
+}
+
+/* Navigation bar */
+
+nav {
+  display: flex;           
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  background-color: white;  
+  padding: 4px;   
+  box-sizing: border-box;
+  flex-wrap:inherit;
+}
+
+nav a {
+  background-color: rgb(120, 162, 47);
+  color: white;
+  font-size: 14px;      
+  padding: 8px 12px;   
+  margin: 4px;           
+  min-width: auto;
+  box-sizing: border-box;          
+  flex: 0 0 auto;          
+  text-align: center;
+  display:inline-block;
+  text-decoration: none;
+  font-weight:400;
+
+}
+
+
+nav a:hover {
+  background-color: rgb(167, 199, 231);
+  color: rgb(0, 0, 0);
+}
+
+
+
+
+/* Call to Action Section */
+.background-section {
+  background-image: url('../images/roofing-background.jpg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px; 
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+#CTA h1 {
+  color: white;
+  font-size: 56px;
+  font-style:normal;
+  margin-bottom: 10px;
+}
+
+#CTA {
+  text-align: left;
+  padding: 40px 20px;
+  max-width: none; 
+  margin: 0;    
+}
+.cta-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.cta-button {
+  background-color: #78a22f; /* Default green */
+  color: white;
+  padding: 20px 30px;
+  font-size:x-large;
+  text-decoration: none;
+  font-weight: 750;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button.quote {
+  background-color: #a7c7e7; /* Soft blue */
+}
+
+.cta-button.style {
+  background-color: #78a22f; /* Forest green */
+}
+
+.cta-button:hover {
+  background-color: #5a9bd5; /* Slightly darker blue */
+}
+
+
+
+/* Testimonials */
+
+/* Testimonials container */
+#testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px;
+  margin: 30px auto;
+  gap: 20px;
+  max-width: 1000px; /* Allows space for 3 columns */
+}
+
+/* Testimonials headline outside container */
+#testimonials-section h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: rgb(120,62,47); /* Copper */
+  margin: 0 auto 15px auto;
+  max-width: 1000px;
+  text-align: left; /* or center, depending on your layout */
+  padding: 0 30px; /* match your container padding if needed */
+}
+
+/* Individual testimonial boxes */
+#testimonials article {
+  flex: 1 1 calc(33.333% - 20px); /* Three columns with gap compensation */
+  box-sizing: border-box;
+  padding: 15px;
+  border: 4px solid rgb(167,199,231); /* Soft Blue accent */
+  background-color: #78a22f;
+  border-radius: 4px;
+}
+
+/* Text styling */
+#testimonials h4 {
+  margin: 0 0 10px 0;
+  font-weight: 500;
+}
+
+#testimonials cite {
+  font-style: italic;
+  color: rgb(120,62,47);
+}
+
+/* Benefits */
+
+#benefits-section h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: rgb(120,62,47); /* Copper */
+  margin: 0 auto 20px auto;
+  max-width: 1000px;
+  text-align: left;
+  padding: 0 30px;
+}
+
+.benefits-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.benefits-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.benefits-table td {
+  padding: 10px;
+  font-size: 20px;
+  line-height: 1.5;
+  vertical-align: middle;
+  border: none;
+}
+
+.benefits-table td strong {
+  font-size: 30px;
+}
+
+.benefits-table td img {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+
+/* Roofing Styles Section */
+#styles {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#styles h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: rgb(120,62,47); /* Copper */
+  margin-bottom: 20px;
+}
+
+.styles-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.image-row {
+  display: flex;
+  justify-content:center;
+  gap: 0px; 
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.image-row img {
+width: 200px;
+height: auto;
+border: 2px solid rgb(184,115,51); /* Copper Accent border */
+border-radius: 8px;
+object-fit: cover;
+cursor: pointer;  
+}
+

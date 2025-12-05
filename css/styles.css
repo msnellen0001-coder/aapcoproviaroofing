@@ -257,22 +257,21 @@ nav a.active {
 
 /* Roofing Styles Image Grid Fix */
 .image-row {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 15px;
-  justify-items: center;
-  width: 100%;
+  display: flex;
+  justify-content:center;
+  gap: 0px; 
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .image-row img {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-  border-radius: 8px;
-  border: 2px solid rgb(184,115,51);
+width: 200px;
+height: auto;
+border: 2px solid rgb(184,115,51); 
+border-radius: 8px;
+object-fit: cover;
+cursor: pointer;  
 }
-
-
 
 /* Roofing Styles Page */
 
@@ -881,6 +880,7 @@ cite,
   }
 
 }
+
 
 
 

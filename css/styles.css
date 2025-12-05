@@ -234,6 +234,10 @@ nav a.active {
   text-decoration: none;
 }
 
+#styles h2 {
+  margin-bottom: 20px;
+}
+
 .section-link {
   font-size: 32px;
   font-weight: 600;
@@ -251,24 +255,28 @@ nav a.active {
   padding: 0 30px;
 }
 
+/* Roofing Styles Image Grid Fix */
 .image-row {
-  display: flex;
-  justify-content:center;
-  gap: 0px; 
-  max-width: 1000px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  justify-items: center;
 }
 
 .image-row img {
-width: 200px;
-height: auto;
-border: 2px solid rgb(184,115,51); 
-border-radius: 8px;
-object-fit: cover;
-cursor: pointer;  
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid rgb(184,115,51);
 }
 
+
 /* Roofing Styles Page */
+
+#styles {
+  text-align: center;
+}
 
 #styles-section {
   text-align: center;
@@ -553,7 +561,7 @@ footer a:hover {
   }
 
   .faq-item p.open {
-    max-height: 500px; /* enough room for any answer */
+    max-height: 500px; 
   }
 
 /* Make FAQ questions feel clickable */
@@ -617,10 +625,10 @@ footer a:hover {
   }
 
   .faq-image-row img {
-    width: 30%;          /* Each image takes up 30% of the row */
-    max-width: 300px;    /* Prevents them from getting too large on big screens */
-    height: 200px;       /* Uniform height */
-    object-fit: cover;   /* Crops nicely without distortion */
+    width: 30%;          
+    max-width: 300px;   
+    height: 200px;       
+    object-fit: cover;   
     border-radius: 8px;
     border: 2px solid rgb(184,115,51);
   }
@@ -833,16 +841,14 @@ cite,
   }
 
   /* Roofing Styles Page*/
-    .image-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
+  #styles {
+    padding: 20px 10px;
   }
 
-  .image-row img {
-    width: 100%;
-    height: auto;
+  .image-row {
+    grid-template-columns: 1fr 1fr;
   }
 }
+
 
 

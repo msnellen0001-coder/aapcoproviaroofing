@@ -1,3 +1,10 @@
+/* Global Wrapper for Consistent Page Width */
+.wrapper {
+  max-width: 1200px;   /* Controls how wide your content can get */
+  margin: 0 auto;      /* Centers the content */
+  padding: 0 20px;     /* Adds breathing room on left/right */
+}
+
 body {
   font-family: 'DM Sans', sans-serif;
   background-color: rgb(255,255,255); /* White */
@@ -389,5 +396,400 @@ footer a:hover {
   text-decoration: underline;
 }
 
+/* About Page */
+.about-section {
+    padding: 60px 20px;
+    background: #f7f7f7;
+}
+
+.about-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.about-text h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.about-text h2 {
+    margin-top: 30px;
+    font-size: 1.6rem;
+}
+
+.about-text p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.skills-list {
+    list-style: square;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.skills-list li {
+    margin-bottom: 8px;
+}
+
+/* Services Page */
+.services-section {
+    padding: 60px 20px;
+    background: #ffffff;
+}
+
+.services-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.services-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.intro {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.service-card {
+    background: #f7f7f7;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.service-card h2 {
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.service-card ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+.service-card li {
+    margin-bottom: 8px;
+}
+
+/* Testimonials Page */
+.testimonials-section {
+    padding: 60px 20px;
+    background: #f7f7f7;
+}
+
+.testimonials-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.testimonials-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.intro {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.testimonial-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.testimonial-image img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.testimonial-text {
+    flex: 1;
+}
+
+.quote {
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.author {
+    font-weight: bold;
+    color: #444;
+}
+
+  /* FAQ Page */
+
+  /* FAQ Accordion Animation */
+  .faq-item p {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  .faq-item p.open {
+    max-height: 500px; /* enough room for any answer */
+  }
+
+/* Make FAQ questions feel clickable */
+.faq-item h3 {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.faq-item h3:hover {
+  color: #78a22f; 
+}
 
 
+  .faq-icon {
+    font-size: 1.4rem;
+    margin-right: 8px;
+    color: rgb(120, 62, 47);
+  }
+
+  .faq-pdf {
+    margin: 40px 0;
+    text-align: center;
+  }
+
+  .faq-pdf a {
+    font-size: 1.1rem;
+    color: rgb(120, 62, 47);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .faq-pdf a:hover {
+    text-decoration: underline;
+  }
+
+  .faq-cta {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .metal-cta {
+    background-color: rgb(120, 162, 47);
+    padding: 18px 30px;
+    font-size: 1.2rem;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+  }
+
+  .metal-cta:hover {
+    background-color: rgb(120, 62, 47);
+  }
+  /* FAQ Layout Improvements */
+  .faq-image-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .faq-image-row img {
+    width: 30%;          /* Each image takes up 30% of the row */
+    max-width: 300px;    /* Prevents them from getting too large on big screens */
+    height: 200px;       /* Uniform height */
+    object-fit: cover;   /* Crops nicely without distortion */
+    border-radius: 8px;
+    border: 2px solid rgb(184,115,51);
+  }
+
+  /* Add padding so the FAQ isn't hugging the page edges */
+  .faq-container {
+    padding: 0 40px;
+  }
+
+  /* Indent each FAQ item */
+  .faq-item {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  /* Indent questions slightly */
+  .faq-item h3 {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Indent answers more than questions */
+  .faq-item p {
+    margin-left: 30px;
+    margin-top: 8px;
+    line-height: 1.6;
+  }
+
+  /* Keep icons aligned nicely */
+  .faq-icon {
+    margin-right: 10px;
+    color: rgb(120, 62, 47);
+    font-size: 1.4rem;
+  }
+
+/* Color Updates */
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: rgb(120, 62, 47);
+}
+
+/* Links (keep hover styles from original CSS) */
+a {
+  color: rgb(120, 62, 47);
+}
+
+/* Accents */
+cite,
+.author {
+  color: rgb(120, 62, 47);
+}
+
+/* Section-specific headings (in case any were overridden earlier) */
+#testimonials-section h2,
+#benefits-section h2,
+#styles-section h2,
+.services-container h1,
+.service-card h2,
+.about-text h1,
+.about-text h2,
+.testimonials-container h1,
+.style-card h3 {
+  color: rgb(120, 62, 47);
+}
+
+/* Resources Page */
+.resources-section {
+  padding: 60px 20px;
+  background: #ffffff;
+}
+
+.resources-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.resources-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: rgb(120, 62, 47);
+}
+
+.resource-links h2,
+.resource-videos h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: rgb(120, 62, 47);
+}
+
+.resource-links ul {
+  list-style: square;
+  padding-left: 25px;
+}
+
+.resource-links li {
+  margin-bottom: 10px;
+}
+
+.resource-links a {
+  color: rgb(120, 62, 47);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.resource-links a:hover {
+  text-decoration: underline;
+}
+
+/* Video Grid */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.video-card iframe {
+  width: 100%;
+  height: 220px;
+  border: none;   /* ✅ replaces frameborder="0" */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* CTA */
+.resources-cta {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.metal-cta {
+  background-color: rgb(120, 162, 47);
+  padding: 18px 30px;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.metal-cta:hover {
+  background-color: rgb(120, 62, 47);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+
+  /* Make FAQ images stack nicely */
+  .faq-image-row img {
+    width: 100%;
+    max-width: none;
+    height: auto;
+  }
+
+  /* Make video grid single-column */
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Improve text spacing */
+  .faq-item,
+  .resource-links,
+  .resource-videos {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* Make CTA buttons full-width */
+  .metal-cta {
+    width: 100%;
+    text-align: center;
+  }
+}

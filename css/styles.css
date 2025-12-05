@@ -771,6 +771,22 @@ cite,
 /* Mobile adjustments */
 @media (max-width: 768px) {
 
+  /* MOBILE NAV FIX */
+  nav {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  }
+
+  nav img {
+  max-height: 40px;
+  }
+
+  nav a {
+  padding: 6px 10px;
+  font-size: 13px;
+  }
+
   /* Make FAQ images stack nicely */
   .faq-image-row img {
     width: 100%;
@@ -796,5 +812,37 @@ cite,
     width: 100%;
     text-align: center;
   }
+
+  /* Benefits Table */
+  .benefits-table {
+    display: block;
+  }
+
+  .benefits-table tr {
+    display: block;
+    margin-bottom: 25px;
+  }
+
+  .benefits-table td {
+    display: block;
+    text-align: center;
+  }
+
+  .benefits-table img {
+    margin: 0 auto 10px auto;
+  }
+
+  /* Roofing Styles Page*/
+    .image-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .image-row img {
+    width: 100%;
+    height: auto;
+  }
 }
+
 

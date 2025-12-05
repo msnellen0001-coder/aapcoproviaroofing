@@ -261,6 +261,7 @@ nav a.active {
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 15px;
   justify-items: center;
+  width: 100%;
 }
 
 .image-row img {
@@ -277,6 +278,10 @@ nav a.active {
 
 #styles {
   text-align: center;
+}
+
+#styles {
+  padding: 40px 20px;
 }
 
 #styles-section {
@@ -851,6 +856,7 @@ cite,
     gap: 12px;
   }
 }
+
 
 
 

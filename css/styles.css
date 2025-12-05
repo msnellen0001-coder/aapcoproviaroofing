@@ -265,12 +265,12 @@ nav a.active {
 }
 
 .image-row img {
-width: 200px;
-height: auto;
-border: 2px solid rgb(184,115,51); 
-border-radius: 8px;
-object-fit: cover;
-cursor: pointer;  
+  width: 100%;
+  height: 150px;       
+  object-fit: cover;  
+  border-radius: 8px;
+  border: 2px solid rgb(184,115,51);
+  cursor: pointer;  
 }
 
 /* Roofing Styles Page */
@@ -854,10 +854,12 @@ cite,
     grid-template-columns: 1fr;
     gap: 15px;
   }
-    .image-row img {
-    max-width: 300px;    
-    margin: 0 auto;              
-  }
+.image-row img {
+  max-width: 300px;
+  margin: 0 auto;
+  height: auto;       
+}
+
 
   /* Roofing Styles Page */
   .styles-grid {
@@ -880,6 +882,7 @@ cite,
   }
 
 }
+
 
 
 

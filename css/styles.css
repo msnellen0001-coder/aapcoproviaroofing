@@ -846,7 +846,7 @@ cite,
     margin: 0 auto 10px auto;
   }
 
-  /* Roofing Styles Page*/
+  /* Roofing Images Home Page*/
   #styles {
     padding: 20px 10px;
   }
@@ -860,7 +860,28 @@ cite,
     margin: 0 auto;              
   }
 
+  /* Roofing Styles Page */
+  .styles-grid {
+    display: grid;           
+    grid-template-columns: 1fr; 
+    padding: 0 15px;
+    gap: 20px;
+  }
+  .style-card {
+    text-align: left;
+    margin-bottom: 24px;
+    background: #f7f7f7;
+    border-radius: 8px;
+    padding: 16px;
+
+  }
+
+  .style-card img {
+    height: auto;           
+  }
+
 }
+
 
 
 

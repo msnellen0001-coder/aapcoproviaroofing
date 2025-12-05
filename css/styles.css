@@ -852,10 +852,16 @@ cite,
   }
 
   .image-row {
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
+    grid-template-columns: 1fr;
+    gap: 15px;
   }
+    .image-row img {
+    max-width: 300px;    
+    margin: 0 auto;              
+  }
+
 }
+
 
 
 

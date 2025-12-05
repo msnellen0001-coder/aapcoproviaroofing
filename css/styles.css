@@ -220,6 +220,10 @@ nav a.active {
   vertical-align: middle;
 }
 
+.benefits-table img {
+  width: 60px;   /* adjust size here */
+  height: auto;
+}
 
 /* Roofing Styles Section */
 #styles {
@@ -793,3 +797,4 @@ cite,
     text-align: center;
   }
 }
+
